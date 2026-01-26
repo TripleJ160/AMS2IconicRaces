@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans"
 import { Russo_One } from "next/font/google"
 import "./globals.css"
 import { PageTransition } from "@/components/shared/PageTransition"
+import { Analytics } from "@vercel/analytics/react"
 
 const russoOne = Russo_One({
   weight: "400",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="aurora-bg min-h-screen">
         <div className="noise-texture fixed inset-0 -z-5" />
         <PageTransition>{children}</PageTransition>
+        <Analytics />
       </body>
     </html>
   )
