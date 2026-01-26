@@ -1,0 +1,80 @@
+[
+  {
+    "id": "opala-interlagos-79",
+    "title": "The First Champions",
+    "driver": "Paulo Gomes",
+    "team": "Coca-Cola Racing",
+    "year": "1979",
+    "tags": [
+      "Brazil",
+      "Roots",
+      "Slide"
+    ],
+    "description": "Stock Car Brasil was born here. 30 identical Chevrolet Opalas, zero downforce, narrow bias-ply tires, and the terrifying 8km Interlagos circuit. It wasn't about aero; it was about brave braking.",
+    "heroImage": "/images/opala-interlagos.png",
+    "imagePosition": "center center",
+    "imageScale": 1.1,
+    "imageOffsetX": 0,
+    "imageOffsetY": 0,
+    "youtubeId": "YeqMpLTOqZ0",
+    "raceContext": {
+      "event": "1979 Stock Car Brasil Season Opener",
+      "circuit": "Interlagos (1976 Layout), Brazil",
+      "laps": 12,
+      "distance": "96 km",
+      "conditions": "Hot and Hazy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Stock_Car_Brasil",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Paulo Gomes",
+          "team": "Coca-Cola",
+          "vehicle": "Opala Stock Car"
+        },
+        {
+          "position": 2,
+          "driver": "Alencar Jr",
+          "team": "Chesterfield",
+          "vehicle": "Opala Stock Car"
+        },
+        {
+          "position": 3,
+          "driver": "Raul Boesel",
+          "team": "Sloper",
+          "vehicle": "Opala Stock Car"
+        }
+      ],
+      "keyMoments": [
+        "The massive field of 30+ V8s roaring at the start",
+        "Four-wheel drifting the heavy chassis through Curva 1 and 2",
+        "Managing brake fade on the heavy cars into the hairpins",
+        "Drafting battles down the endless Retão straight"
+      ],
+      "significance": "This is the spiritual home of Automobilista 2. The physics engine shines here, simulating the heavy weight transfer and suspension roll that modern GT3 cars mask. It teaches you pure weight management."
+    },
+    "ams2": {
+      "trackId": 1312214486,
+      "trackName": "Interlagos_Historic",
+      "vehicleClassId": 1260887313,
+      "vehicleClassName": "Opala79",
+      "vehicleId": -1201567586,
+      "vehicleName": "Chevrolet Opala Stock Cars 1979",
+      "date": "1979-04-22",
+      "time": "11:00",
+      "aiCount": 31,
+      "raceLength": "12 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -1299791789,
+          "weatherName": "Hazy"
+        },
+        {
+          "slot": 2,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

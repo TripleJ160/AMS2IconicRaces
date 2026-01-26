@@ -1,0 +1,100 @@
+[
+  {
+    "id": "clark-spa-63",
+    "title": "The Impossible Lead",
+    "driver": "Jim Clark",
+    "team": "Lotus",
+    "year": "1963",
+    "tags": ["Vintage", "F1", "Dominance"],
+    "description": "Jim Clark laps the entire field except for Bruce McLaren in driving rain at the old Spa circuit.",
+    "heroImage": "/images/clark-spa.png",
+    "youtubeId": "9C9zvhwoS8c",
+    "raceContext": {
+      "event": "1963 Belgian Grand Prix",
+      "circuit": "Spa-Francorchamps (Old Circuit), Belgium",
+      "laps": 32,
+      "distance": "448 km",
+      "conditions": "Heavy rain throughout the race",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1963_Belgian_Grand_Prix",
+      "podiumResults": [
+        { "position": 1, "driver": "Jim Clark", "team": "Lotus-Climax", "vehicle": "Lotus 25" },
+        { "position": 2, "driver": "Bruce McLaren", "team": "Cooper-Climax", "vehicle": "Cooper T66" },
+        { "position": 3, "driver": "Dan Gurney", "team": "Brabham-Climax", "vehicle": "Brabham BT7" }
+      ],
+      "keyMoments": [
+        "Clark dominates from pole position in torrential rain",
+        "Laps the entire field except for Bruce McLaren",
+        "Wins by nearly 5 minutes on the treacherous 14km circuit",
+        "Driven with a gearbox that kept jumping out of 5th gear"
+      ],
+      "significance": "One of Clark's most dominant performances, showcasing his legendary car control on the most dangerous circuit of the era. The old Spa-Francorchamps was 14km of public roads through the Ardennes forest."
+    },
+    "ams2": {
+      "trackId": -1736505524,
+      "trackName": "Spa_Francorchamps_1970",
+      "vehicleClassId": 520250275,
+      "vehicleClassName": "F-Vintage_Gen1",
+      "vehicleId": 318400650,
+      "vehicleName": "Formula Vintage Gen1 Model2",
+      "date": "1963-06-09",
+      "time": "15:00",
+      "aiCount": 19,
+      "raceLength": "15 laps",
+      "weather": [
+        { "slot": 1, "weatherId": -1592958063, "weatherName": "Storm" },
+        { "slot": 2, "weatherId": 1461703858, "weatherName": "Rain" },
+        { "slot": 3, "weatherId": 1461703858, "weatherName": "Rain" },
+        { "slot": 4, "weatherId": -1293634875, "weatherName": "Overcast" }
+      ]
+    }
+  },
+  {
+    "id": "fangio-nurburgring-57",
+    "title": "The Masterclass",
+    "driver": "Juan Manuel Fangio",
+    "team": "Maserati",
+    "year": "1957",
+    "tags": ["GOAT", "Vintage", "Comeback"],
+    "description": "After a botched pitstop leaves him 50 seconds behind, Fangio breaks the lap record 9 times in 10 laps to hunt down the Ferraris.",
+    "heroImage": "/images/fangio-nurburgring.png",
+    "youtubeId": "F8GewTBczsQ",
+    "raceContext": {
+      "event": "1957 German Grand Prix",
+      "circuit": "Nürburgring Nordschleife, Germany",
+      "laps": 22,
+      "distance": "501 km",
+      "conditions": "Sunny and Warm",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1957_German_Grand_Prix",
+      "podiumResults": [
+        { "position": 1, "driver": "Juan Manuel Fangio", "team": "Maserati", "vehicle": "Maserati 250F" },
+        { "position": 2, "driver": "Mike Hawthorn", "team": "Ferrari", "vehicle": "Ferrari 801" },
+        { "position": 3, "driver": "Peter Collins", "team": "Ferrari", "vehicle": "Ferrari 801" }
+      ],
+      "keyMoments": [
+        "Fangio starts with half-tank of fuel to build lead",
+        "Pitstop disaster: mechanic drops wheel nut, 50s lost",
+        "Breaks lap record 9 times in final 10 laps",
+        "Overtakes both Ferraris on the penultimate lap"
+      ],
+      "significance": "Often cited as the greatest drive in history. Fangio himself said: 'I have never driven that quickly before in my life and I don't think I will ever be able to do it again.'"
+    },
+    "ams2": {
+      "trackId": 399001429,
+      "trackName": "Nurb_1971_Nords",
+      "vehicleClassId": 520250275,
+      "vehicleClassName": "F-Vintage_Gen1",
+      "vehicleId": -1261768631,
+      "vehicleName": "Formula Vintage Gen1 Model1",
+      "date": "1957-08-04",
+      "time": "13:00",
+      "aiCount": 23,
+      "raceLength": "10 laps",
+      "weather": [
+        { "slot": 1, "weatherId": -934211870, "weatherName": "Clear" },
+        { "slot": 2, "weatherId": -934211870, "weatherName": "Clear" },
+        { "slot": 3, "weatherId": -934211870, "weatherName": "Clear" },
+        { "slot": 4, "weatherId": -934211870, "weatherName": "Clear" }
+      ]
+    }
+  }
+]

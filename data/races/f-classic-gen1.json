@@ -1,0 +1,75 @@
+[
+  {
+    "id": "senna-lotus-adelaide-86",
+    "title": "The 1300HP Grenade",
+    "driver": "Ayrton Senna",
+    "team": "JPS Team Lotus",
+    "year": "1986",
+    "tags": [
+      "Turbo Era",
+      "Qualifying",
+      "Street"
+    ],
+    "description": "1986 was the peak of F1 insanity. The BMW and Renault engines pushed 5.5 bar of boost in qualifying. Senna's pole lap here is considered one of the most physically demanding laps ever driven.",
+    "heroImage": "/images/senna-adelaide.png",
+    "imagePosition": "center center",
+    "imageScale": 1.2,
+    "imageOffsetX": 0,
+    "imageOffsetY": 0,
+    "youtubeId": "8c0o697F1g8",
+    "raceContext": {
+      "event": "1986 Australian Grand Prix",
+      "circuit": "Adelaide Street Circuit, Australia",
+      "laps": 82,
+      "distance": "309 km",
+      "conditions": "Sunny and Hot",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1986_Australian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Alain Prost",
+          "team": "McLaren-TAG",
+          "vehicle": "McLaren MP4/2C"
+        },
+        {
+          "position": 2,
+          "driver": "Nelson Piquet",
+          "team": "Williams-Honda",
+          "vehicle": "Williams FW11"
+        },
+        {
+          "position": 3,
+          "driver": "Stefan Johansson",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F1/86"
+        }
+      ],
+      "keyMoments": [
+        "Nigel Mansell's spectacular tire blowout at 180mph that cost him the title",
+        "Senna's pole position: 1:15.654, wrestling the car with one hand on the shifter",
+        "The 'Qualifying Engines' that would be scrapped after just 3 laps",
+        "Prost winning the title by stealth while the others destroyed their tires"
+      ],
+      "significance": "This was the end of the 'Wild West' turbo era. The Lotus 98T had no traction control, manual shifting, and turbo lag that hit like a sledgehammer. Driving this car at the limit is the ultimate test of throttle control."
+    },
+    "ams2": {
+      "trackId": -559709709,
+      "trackName": "Adelaide_Historic",
+      "vehicleClassId": 913480074,
+      "vehicleClassName": "F-Classic_Gen1",
+      "vehicleId": 1959097924,
+      "vehicleName": "Lotus Renault 98T",
+      "date": "1986-10-26",
+      "time": "14:30",
+      "aiCount": 25,
+      "raceLength": "10 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

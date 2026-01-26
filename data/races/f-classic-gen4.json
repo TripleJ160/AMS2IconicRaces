@@ -1,0 +1,51 @@
+[
+  {
+    "id": "senna-interlagos-91",
+    "title": "Stuck in Sixth",
+    "driver": "Ayrton Senna",
+    "team": "McLaren",
+    "year": "1991",
+    "tags": ["Home Win", "F1", "Endurance"],
+    "description": "Senna's gearbox fails, leaving him stuck in 6th gear for the final laps. With rain falling and Patrese closing, he screams to his first home victory.",
+    "heroImage": "/images/senna-interlagos.png",
+    "youtubeId": "aOk_Rriz8OA",
+    "raceContext": {
+      "event": "1991 Brazilian Grand Prix",
+      "circuit": "Interlagos, Brazil",
+      "laps": 71,
+      "distance": "307 km",
+      "conditions": "Dry start, heavy rain in final laps",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1991_Brazilian_Grand_Prix",
+      "podiumResults": [
+        { "position": 1, "driver": "Ayrton Senna", "team": "McLaren-Honda", "vehicle": "McLaren MP4/6" },
+        { "position": 2, "driver": "Riccardo Patrese", "team": "Williams-Renault", "vehicle": "Williams FW14" },
+        { "position": 3, "driver": "Gerhard Berger", "team": "McLaren-Honda", "vehicle": "McLaren MP4/6" }
+      ],
+      "keyMoments": [
+        "Senna leads comfortably until gearbox begins failing",
+        "Loses 3rd, 4th, and 5th gears, stuck in 6th for final 7 laps",
+        "Stalls on cool-down lap due to exhaustion and stalls car",
+        "First ever home victory for Senna"
+      ],
+      "significance": "A victory of pure physical and mental endurance. Senna was so exhausted he had to be lifted from the car, having driven the tight infield section in top gear."
+    },
+    "ams2": {
+      "trackId": 930258290,
+      "trackName": "Interlagos_1991",
+      "vehicleClassId": -1068384799,
+      "vehicleClassName": "F-Classic_Gen4",
+      "vehicleId": 271036494,
+      "vehicleName": "McLaren Honda MP4/6",
+      "date": "1991-03-24",
+      "time": "13:00",
+      "aiCount": 25,
+      "raceLength": "30 laps",
+      "weather": [
+        { "slot": 1, "weatherId": 888299130, "weatherName": "MediumCloud" },
+        { "slot": 2, "weatherId": 129238383, "weatherName": "HeavyCloud" },
+        { "slot": 3, "weatherId": 270338437, "weatherName": "LightRain" },
+        { "slot": 4, "weatherId": 1461703858, "weatherName": "Rain" }
+      ]
+    }
+  }
+]

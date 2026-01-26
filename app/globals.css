@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geist-sans: 'Geist Sans', 'Inter', system-ui, sans-serif;
+    --font-russo-one: 'Russo One', 'Oswald', 'Impact', sans-serif;
+  }
+
+  body {
+    @apply bg-background-primary text-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism effect */
+  .glass-effect {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* AMS2-inspired cinematic background with animated radial gradient */
+  .aurora-bg {
+    background: 
+      radial-gradient(
+        ellipse 60% 50% at 85% 85%,
+        rgba(139, 0, 0, 0.4),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 40% 40% at 90% 90%,
+        rgba(220, 0, 0, 0.25),
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 50% 50%,
+        #1a1a1a 0%,
+        #0f0f0f 50%,
+        #0a0a0a 100%
+      );
+    animation: aurora-pulse 8s ease-in-out infinite;
+  }
+
+  @keyframes aurora-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.95;
+    }
+  }
+
+  /* Noise texture overlay */
+  .noise-texture {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  /* Gradient overlay for text readability */
+  .gradient-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(10, 10, 10, 0.9) 0%,
+      rgba(10, 10, 10, 0.6) 50%,
+      rgba(10, 10, 10, 0.3) 100%
+    );
+  }
+
+  /* AMS2-style skewed elements */
+  .skew-ams2 {
+    transform: skewX(-10deg);
+  }
+
+  .skew-ams2-content {
+    transform: skewX(10deg);
+  }
+
+  /* Racing game HUD label style */
+  .hud-label {
+    @apply uppercase tracking-[0.2em] text-xs font-semibold text-red-500;
+  }
+
+  /* Red accent border with glow effect */
+  .red-accent-border {
+    border-left: 4px solid rgb(220, 0, 0);
+    box-shadow: -4px 0 12px rgba(220, 0, 0, 0.4);
+  }
+
+  .red-accent-border-hover {
+    border-left: 4px solid rgb(220, 0, 0);
+    box-shadow: -8px 0 20px rgba(220, 0, 0, 0.6);
+  }
+}

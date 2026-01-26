@@ -1,0 +1,51 @@
+[
+  {
+    "id": "senna-donington-93",
+    "title": "Lap of the Gods",
+    "driver": "Ayrton Senna",
+    "team": "McLaren",
+    "year": "1993",
+    "tags": ["Rain Master", "F1", "Heroic"],
+    "description": "Senna starts 4th in treacherous conditions. By the end of lap 1, he is leading. Recreate the variable wet conditions that defined this masterclass.",
+    "heroImage": "/images/senna-donington.png",
+    "youtubeId": "cZqOsDY-uco",
+    "raceContext": {
+      "event": "1993 European Grand Prix",
+      "circuit": "Donington Park, England",
+      "laps": 76,
+      "distance": "305.7 km",
+      "conditions": "Wet, changing conditions throughout the race",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1993_European_Grand_Prix",
+      "podiumResults": [
+        { "position": 1, "driver": "Ayrton Senna", "team": "McLaren-Ford", "vehicle": "McLaren MP4/8" },
+        { "position": 2, "driver": "Damon Hill", "team": "Williams-Renault", "vehicle": "Williams FW15C" },
+        { "position": 3, "driver": "Alain Prost", "team": "Williams-Renault", "vehicle": "Williams FW15C" }
+      ],
+      "keyMoments": [
+        "Senna overtakes 4 cars on the opening lap in treacherous conditions",
+        "By lap 1, Senna moves from 4th to 1st place",
+        "Laps the entire field except for Damon Hill",
+        "Wins by over 1 minute 23 seconds"
+      ],
+      "significance": "Widely regarded as one of the greatest drives in Formula 1 history. Senna's mastery in the wet was on full display as he dominated in an inferior car."
+    },
+    "ams2": {
+      "trackId": 1497365379,
+      "trackName": "Donington_GP",
+      "vehicleClassId": -1271841366,
+      "vehicleClassName": "F-Hitech_Gen2",
+      "vehicleId": -1271841366,
+      "vehicleName": "McLaren Cosworth MP4/8",
+      "date": "1993-04-11",
+      "time": "14:00",
+      "aiCount": 25,
+      "raceLength": "20 laps",
+      "weather": [
+        { "slot": 1, "weatherId": 296956818, "weatherName": "Light Cloud" },
+        { "slot": 2, "weatherId": 270338437, "weatherName": "Light Rain" },
+        { "slot": 3, "weatherId": -1293634875, "weatherName": "Overcast" },
+        { "slot": 4, "weatherId": 1461703858, "weatherName": "Rain" }
+      ]
+    }
+  }
+]

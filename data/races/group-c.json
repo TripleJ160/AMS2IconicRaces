@@ -1,0 +1,80 @@
+[
+  {
+    "id": "sauber-hockenheim-88",
+    "title": "The Silver Arrow Returns",
+    "driver": "Jean-Louis Schlesser",
+    "team": "Team Sauber Mercedes",
+    "year": "1988",
+    "tags": [
+      "Group C",
+      "Speed",
+      "Silver Arrows"
+    ],
+    "description": "The Porsche 962 had ruled endurance racing for years. Then came the Sauber C9. At Hockenheim, the Mercedes V8 shattered the status quo, hitting 355 km/h in the forest to claim victory.",
+    "heroImage": "/images/sauber-hockenheim.png",
+    "imagePosition": "center center",
+    "imageScale": 1.3,
+    "imageOffsetX": 150,
+    "imageOffsetY": -170,
+    "youtubeId": "7yPOgeRrudY",
+    "raceContext": {
+      "event": "1988 Würth Supercup",
+      "circuit": "Hockenheimring (Historic), Germany",
+      "laps": 15,
+      "distance": "102 km",
+      "conditions": "Dry",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1988_Supercup_season",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Jean-Louis Schlesser",
+          "team": "Team Sauber Mercedes",
+          "vehicle": "Sauber C9"
+        },
+        {
+          "position": 2,
+          "driver": "Bob Wollek",
+          "team": "Joest Racing",
+          "vehicle": "Porsche 962C"
+        },
+        {
+          "position": 3,
+          "driver": "Manuel Reuter",
+          "team": "Brun Motorsport",
+          "vehicle": "Porsche 962C"
+        }
+      ],
+      "keyMoments": [
+        "Schlesser's pole lap of 1:55.70, a full second clear of the Porsches",
+        "The C9 hitting 350km/h+ on the four forest straights without chicanes",
+        "The distinctive 'thunder' of the Mercedes M119 V8 vs the flat-6 Porsches",
+        "Mercedes claiming their territory on German soil after decades away"
+      ],
+      "significance": "This car marked Mercedes-Benz's serious return to top-level racing. The C9 was a low-drag monster designed specifically for tracks like Hockenheim and Le Mans, ending the Porsche dominance."
+    },
+    "ams2": {
+      "trackId": 534374248,
+      "trackName": "Hockenheim_1988",
+      "vehicleClassId": 995310913,
+      "vehicleClassName": "Group C",
+      "vehicleId": 65306143,
+      "vehicleName": "Sauber Mercedes C9",
+      "date": "1988-09-25",
+      "time": "14:00",
+      "aiCount": 29,
+      "raceLength": "15 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 296956818,
+          "weatherName": "Light Cloud"
+        },
+        {
+          "slot": 2,
+          "weatherId": -1293634875,
+          "weatherName": "Overcast"
+        }
+      ]
+    }
+  }
+]

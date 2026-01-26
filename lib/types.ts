@@ -1,0 +1,71 @@
+/**
+ * Podium result entry
+ */
+export interface PodiumResult {
+  position: number;
+  driver: string;
+  team: string;
+  vehicle: string;
+}
+
+/**
+ * Historical race context information
+ */
+export interface RaceContext {
+  event: string;
+  circuit: string;
+  laps: number;
+  distance: string;
+  conditions: string;
+  wikipediaUrl: string;
+  podiumResults: PodiumResult[];
+  keyMoments: string[];
+  significance: string;
+}
+
+/**
+ * Weather slot configuration for AMS2
+ */
+export interface WeatherSlot {
+  slot: number;
+  weatherId: number;
+  weatherName: string;
+}
+
+/**
+ * AMS2 setup configuration with actual game IDs
+ */
+export interface AMS2Setup {
+  trackId: number;
+  trackName: string;
+  vehicleClassId: number;
+  vehicleClassName: string;
+  vehicleId: number;
+  vehicleName: string;
+  date: string;
+  time: string;
+  aiCount: number;
+  raceLength: string;
+  weather: WeatherSlot[];
+}
+
+/**
+ * Race data structure
+ */
+export interface Race {
+  id: string;
+  title: string;
+  driver: string;
+  team: string;
+  year: string;
+  tags: string[];
+  description: string;
+  heroImage: string;
+  imagePosition?: string; // CSS object-position value (e.g., "center center", "left top", "60% 40%")
+  imageOffsetX?: number; // Horizontal offset in pixels (e.g., -50, 100)
+  imageOffsetY?: number; // Vertical offset in pixels (e.g., -30, 50)
+  imageScale?: number; // Scale multiplier (e.g., 1.2 = 120% zoom in, 0.8 = 80% zoom out)
+  youtubeId: string;
+  raceContext: RaceContext;
+  ams2: AMS2Setup;
+}
