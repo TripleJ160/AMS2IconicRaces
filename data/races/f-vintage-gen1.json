@@ -45,7 +45,8 @@
         { "slot": 2, "weatherId": 1461703858, "weatherName": "Rain" },
         { "slot": 3, "weatherId": 1461703858, "weatherName": "Rain" },
         { "slot": 4, "weatherId": -1293634875, "weatherName": "Overcast" }
-      ]
+      ],
+      "requiredDLC": ["Premium Track Pack"]
     }
   },
   {
@@ -94,7 +95,8 @@
         { "slot": 2, "weatherId": -934211870, "weatherName": "Clear" },
         { "slot": 3, "weatherId": -934211870, "weatherName": "Clear" },
         { "slot": 4, "weatherId": -934211870, "weatherName": "Clear" }
-      ]
+      ],
+      "requiredDLC": ["Premium Track Pack"]
     }
   }
 ]

@@ -32,10 +32,10 @@ export default function Home() {
     [races, searchQuery, activeFilters]
   );
 
-  // Hero race selection - use first filtered race or fallback to first overall race
+  // Hero race selection - always use the first race (Featured Race of the Week)
   const featuredRace = useMemo(() => {
-    return filteredRaces.length > 0 ? filteredRaces[0] : races[0];
-  }, [filteredRaces, races]);
+    return races[0];
+  }, [races]);
 
   // Accessibility announcement for screen readers
   const resultsAnnouncement = useMemo(() => {
@@ -68,10 +68,6 @@ export default function Home() {
       }
       return newFilters;
     });
-  }, []);
-
-  const handleResetFilters = useCallback(() => {
-    setActiveFilters(new Set());
   }, []);
 
   const handleClearAll = useCallback(() => {
@@ -119,7 +115,6 @@ export default function Home() {
           availableClasses={availableClasses}
           activeFilters={activeFilters}
           onFilterToggle={handleFilterToggle}
-          onResetFilters={handleResetFilters}
           onClearAll={handleClearAll}
         />
       </div>

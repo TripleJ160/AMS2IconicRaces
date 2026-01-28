@@ -1,0 +1,89 @@
+[
+  {
+    "id": "gt1-spa-97",
+    "title": "The Holy Trinity",
+    "driver": "Bernd Schneider",
+    "team": "Mercedes-AMG",
+    "year": "1997",
+    "tags": [
+      "Endurance",
+      "Historic",
+      "Europe"
+    ],
+    "description": "The peak of the GT1 wars. The McLaren F1 GTR, Porsche 911 GT1, and Mercedes CLK GTR fighting for 4 hours in the Belgian rain. (Uses 1998 models as proxies).",
+    "heroImage": "/images/gt1-spa.png",
+    "imagePosition": "center top",
+    "youtubeId": "mCirGTHKfEo",
+    "raceContext": {
+      "event": "1997 FIA GT Spa 4 Hours",
+      "circuit": "Spa-Francorchamps, Belgium",
+      "laps": 102,
+      "distance": "711 km",
+      "conditions": "Rain / Drying",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1997_FIA_GT_Championship",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Kox / Ravaglia",
+          "team": "BMW Motorsport",
+          "vehicle": "McLaren F1 GTR"
+        },
+        {
+          "position": 2,
+          "driver": "Schneider / Wurz",
+          "team": "Mercedes-AMG",
+          "vehicle": "Mercedes CLK GTR"
+        },
+        {
+          "position": 3,
+          "driver": "Dalmas / Wollek",
+          "team": "Porsche AG",
+          "vehicle": "Porsche 911 GT1"
+        }
+      ],
+      "keyMoments": [
+        "The BMW (McLaren) team mastering the changing wet conditions",
+        "Mercedes struggling with reliability but showing raw speed",
+        "The sheer speed of GT1 cars matching F1 laptimes in the wet"
+      ],
+      "significance": "This was the only era where three major manufacturers (BMW, Mercedes, Porsche) fought directly with factory teams in the top GT class."
+    },
+    "ams2": {
+      "trackId": 1283905272,
+      "trackName": "Spa_Francorchamps_1993",
+      "vehicleClassId": 1323122160,
+      "vehicleClassName": "GT1",
+      "vehicleId": 1076438091,
+      "vehicleName": "Porsche 911 GT1-98",
+      "requiredDLC": [
+        "Spa-Francorchamps Pack"
+      ],
+      "date": "1997-07-20",
+      "time": "11:00",
+      "aiCount": 26,
+      "raceLength": "40 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1461703858,
+          "weatherName": "Rain"
+        },
+        {
+          "slot": 2,
+          "weatherId": 270338437,
+          "weatherName": "Light Rain"
+        },
+        {
+          "slot": 3,
+          "weatherId": -1293634875,
+          "weatherName": "Overcast"
+        },
+        {
+          "slot": 4,
+          "weatherId": 296956818,
+          "weatherName": "Light Cloud"
+        }
+      ]
+    }
+  }
+]

@@ -45,7 +45,8 @@
         { "slot": 2, "weatherId": 129238383, "weatherName": "HeavyCloud" },
         { "slot": 3, "weatherId": 270338437, "weatherName": "LightRain" },
         { "slot": 4, "weatherId": 1461703858, "weatherName": "Rain" }
-      ]
+      ],
+      "requiredDLC": ["Brazilian Racing Legends Pack", "Historical Track Pack Pt2"]
     }
   }
 ]

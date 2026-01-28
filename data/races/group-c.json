@@ -14,8 +14,8 @@
     "heroImage": "/images/sauber-hockenheim.png",
     "imagePosition": "center center",
     "imageScale": 1.3,
-    "imageOffsetX": 150,
-    "imageOffsetY": -170,
+    "imageOffsetX": 0,
+    "imageOffsetY": 0,
     "youtubeId": "7yPOgeRrudY",
     "raceContext": {
       "event": "1988 Würth Supercup",
@@ -74,7 +74,8 @@
           "weatherId": -1293634875,
           "weatherName": "Overcast"
         }
-      ]
+      ],
+      "requiredDLC": ["Premium Track Pack"]
     }
   }
 ]

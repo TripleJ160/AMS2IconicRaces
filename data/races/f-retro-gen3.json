@@ -1,0 +1,62 @@
+[
+  {
+    "id": "piquet-jacarepagua-83",
+    "title": "The Arrow",
+    "driver": "Nelson Piquet",
+    "team": "Brabham-BMW",
+    "year": "1983",
+    "tags": ["F1", "Historic", "Brazil"],
+    "description": "The car that introduced refueling stops to F1. With its arrow shape and massive BMW turbo power, Piquet dominated his home race.",
+    "heroImage": "/images/bt52-rio.png",
+    "imagePosition": "center center",
+    "youtubeId": "D8bKAASCrJI",
+    "raceContext": {
+      "event": "1983 Brazilian Grand Prix",
+      "circuit": "Jacarepagua (Rio), Brazil",
+      "laps": 63,
+      "distance": "317 km",
+      "conditions": "Hot",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1983_Brazilian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Nelson Piquet",
+          "team": "Brabham",
+          "vehicle": "BT52"
+        },
+        {
+          "position": 2,
+          "driver": "Niki Lauda",
+          "team": "McLaren",
+          "vehicle": "MP4/1C"
+        }
+      ],
+      "keyMoments": [
+        "Piquet leading from start to finish",
+        "The first strategic mid-race refueling in modern F1",
+        "Rosberg's Williams catching fire in the pits"
+      ],
+      "significance": "The BT52 is an icon of design. Built in 3 months after a sudden rule change banned ground effects, it won the championship with massive horsepower and low drag."
+    },
+    "ams2": {
+      "trackId": -89774641,
+      "trackName": "Jacarepagua_Historic",
+      "vehicleClassId": 477739468,
+      "vehicleClassName": "F-Retro_Gen3",
+      "vehicleId": 280856873,
+      "vehicleName": "Brabham BMW BT52",
+      "requiredDLC": ["Brazilian Racing Legends"],
+      "date": "1983-03-13",
+      "time": "13:00",
+      "aiCount": 26,
+      "raceLength": "30 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

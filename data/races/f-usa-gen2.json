@@ -1,0 +1,62 @@
+[
+  {
+    "id": "zanardi-laguna-96",
+    "title": "The Corkscrew Pass",
+    "driver": "Alex Zanardi",
+    "team": "Ganassi Racing",
+    "year": "1996",
+    "tags": ["IndyCar", "Historic", "USA"],
+    "description": "Last lap. The Corkscrew. Zanardi dives into the dirt to overtake Herta. Recreate the most famous overtake in American open-wheel history.",
+    "heroImage": "/images/zanardi-laguna.png",
+    "imagePosition": "center center",
+    "youtubeId": "WuwiqivkKCg",
+    "raceContext": {
+      "event": "1996 Monterey Grand Prix",
+      "circuit": "Laguna Seca, USA",
+      "laps": 83,
+      "distance": "300 km",
+      "conditions": "Sunny",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1996_Indy_Car_World_Series",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Alex Zanardi",
+          "team": "Ganassi",
+          "vehicle": "Reynard 96I"
+        },
+        {
+          "position": 2,
+          "driver": "Bryan Herta",
+          "team": "Rahal",
+          "vehicle": "Reynard 96I"
+        }
+      ],
+      "keyMoments": [
+        "Zanardi stalking Herta for 10 laps",
+        "The dive bomb at the Corkscrew on the final lap",
+        "Zanardi rejoining the track narrowly missing the wall"
+      ],
+      "significance": "This moment defined CART's golden era. The cars had 900HP, no power steering, and raced on the edge of disaster."
+    },
+    "ams2": {
+      "trackId": 568559152,
+      "trackName": "Laguna_Seca_2020",
+      "vehicleClassId": 2084530285,
+      "vehicleClassName": "F-USA_Gen2",
+      "vehicleId": 2011027431,
+      "vehicleName": "Reynard 98i Honda",
+      "requiredDLC": ["Racing USA Pt 1"],
+      "date": "1996-09-08",
+      "time": "14:00",
+      "aiCount": 25,
+      "raceLength": "10 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

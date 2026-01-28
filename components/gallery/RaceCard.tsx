@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import type { Race } from '@/lib/types';
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion';
+import { DLCBadge } from '@/components/shared/DLCBadge';
+import { shouldShowDLCBadge } from '@/lib/filterUtils';
 
 interface RaceCardProps {
   race: Race;
@@ -39,6 +41,13 @@ export function RaceCard({ race, layoutId, gridSpan, onClick, priority = false }
         }`}
       />
 
+      {/* DLC Badge - top-right corner */}
+      {shouldShowDLCBadge(race) && (
+        <div className="absolute top-3 right-3 z-20">
+          <DLCBadge requiredDLC={race.ams2.requiredDLC!} variant="card" />
+        </div>
+      )}
+
       {/* Background Image with zoom effect and desaturation */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -47,13 +56,9 @@ export function RaceCard({ race, layoutId, gridSpan, onClick, priority = false }
           transition={{ duration: 0.4, ease: 'easeOut' }}
         >
           <div 
-            className="absolute"
+            className="absolute inset-0"
             style={{
-              width: `${(race.imageScale || 1) * 100}%`,
-              height: `${(race.imageScale || 1) * 150}%`,
-              left: `calc(50% + ${race.imageOffsetX || 0}px)`,
-              top: `calc(50% + ${race.imageOffsetY || 0}px)`,
-              transform: 'translate(-50%, -50%)',
+              transform: `translate(${race.imageOffsetX || 0}px, ${race.imageOffsetY || 0}px) scale(${race.imageScale || 1})`,
             }}
           >
             <Image

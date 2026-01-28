@@ -69,7 +69,8 @@
           "weatherId": -934211870,
           "weatherName": "Clear"
         }
-      ]
+      ],
+      "requiredDLC": ["Brazilian Racing Legends Pack"]
     }
   }
 ]

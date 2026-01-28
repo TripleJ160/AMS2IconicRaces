@@ -1,0 +1,49 @@
+[
+  {
+    "id": "dtm-nurburgring-90",
+    "title": "Fender Benders",
+    "driver": "Johnny Cecotto",
+    "team": "BMW Motorsport",
+    "year": "1990",
+    "tags": ["Touring", "Historic", "Europe"],
+    "description": "Rubbing is racing. The DTM in the 90s was the most competitive touring car series on earth. BMW vs Mercedes at the Nurburgring.",
+    "heroImage": "/images/dtm-m3.png",
+    "imagePosition": "center center",
+    "youtubeId": "JfQVJDqolc0",
+    "raceContext": {
+      "event": "1990 DTM Season",
+      "circuit": "Nurburgring GP, Germany",
+      "laps": 22,
+      "distance": "100 km",
+      "conditions": "Dry",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Deutsche_Tourenwagen_Meisterschaft",
+      "podiumResults": [],
+      "keyMoments": [
+        "The rivalry between the M3 Sport Evo and the 190E Evo II",
+        "Cecotto and Winkelhock fighting for every inch",
+        "Curbs being used as launch ramps"
+      ],
+      "significance": "Group A cars were based on road cars but highly tuned. They required an aggressive driving style and delivered some of the best door-to-door racing in history."
+    },
+    "ams2": {
+      "trackId": 899109770,
+      "trackName": "Nurb_GP_2020",
+      "vehicleClassId": -1270088329,
+      "vehicleClassName": "Group A",
+      "vehicleId": -934098507,
+      "vehicleName": "BMW M3 Sport Evo Group A",
+      "requiredDLC": ["Nurburgring Pack"],
+      "date": "1990-06-15",
+      "time": "14:00",
+      "aiCount": 24,
+      "raceLength": "15 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

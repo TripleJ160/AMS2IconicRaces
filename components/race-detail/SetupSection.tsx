@@ -26,6 +26,12 @@ function SetupItem({ label, value }: SetupItemProps) {
 }
 
 export function SetupSection({ ams2 }: SetupSectionProps) {
+  // Format date from YYYY-MM-DD to DD-MM-YYYY
+  const formatDate = (dateString: string): string => {
+    const [year, month, day] = dateString.split('-');
+    return `${day}-${month}-${year}`;
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
@@ -42,11 +48,48 @@ export function SetupSection({ ams2 }: SetupSectionProps) {
         <SetupItem label="Track" value={ams2.trackName} />
         <SetupItem label="Vehicle Class" value={ams2.vehicleClassName} />
         <SetupItem label="Vehicle" value={ams2.vehicleName} />
-        <SetupItem label="Date" value={ams2.date} />
+        <SetupItem label="Date" value={formatDate(ams2.date)} />
         <SetupItem label="Time" value={ams2.time} />
         <SetupItem label="AI Opponents" value={ams2.aiCount.toString()} />
         <SetupItem label="Race Length" value={ams2.raceLength} />
       </div>
+      
+      {/* AI Opponent Classes - Multi-class races */}
+      {ams2.multiClass && ams2.aiDistribution && ams2.aiDistribution.length > 0 && (
+        <div className="space-y-4 pt-4 border-t border-white/10">
+          <h3 className="text-xl md:text-2xl font-display text-accent-red tracking-wider uppercase">
+            AI Opponent Classes
+          </h3>
+          
+          <div className="space-y-3">
+            {ams2.aiDistribution.map((classInfo, index) => (
+              <div 
+                key={index}
+                className="flex items-center justify-between p-3 bg-black/30 rounded border border-white/10"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-text-primary font-medium">
+                    {classInfo.vehicleClassName}
+                  </span>
+                  {classInfo.note && (
+                    <span className="text-text-muted text-sm">
+                      ({classInfo.note})
+                    </span>
+                  )}
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-accent-yellow font-bold text-lg">
+                    {classInfo.count} AI
+                  </span>
+                  <span className="text-text-muted text-xs font-mono">
+                    ID: {classInfo.vehicleClassId}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       
       {/* Weather Configuration */}
       <div className="space-y-4 pt-4 border-t border-white/10">
