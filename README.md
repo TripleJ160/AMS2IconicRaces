@@ -1,8 +1,49 @@
 # AMS2 Iconic Races
 
-A curated web gallery showcasing historical racing moments from motorsport history, providing Automobilista 2 sim racers with exact setup configurations to recreate these iconic races.
+A cinematic web gallery showcasing legendary motorsport moments, designed to help Automobilista 2 sim racers recreate iconic races with exact setup configurations.
 
-## Tech Stack
+## 🏁 Project Vision
+
+**AMS2 Iconic Races** bridges the gap between motorsport history and modern sim racing. Instead of endlessly browsing forums or YouTube for race ideas, this curated gallery presents historically significant races with:
+
+- **Cinematic presentation** inspired by racing game menus
+- **Complete AMS2 setup data** (track, car, weather, AI count)
+- **Historical context** (race significance, key moments, podium results)
+- **One-click race launching** (future feature)
+
+The goal is to make it effortless to experience the greatest moments in racing history within Automobilista 2.
+
+## ✨ Features
+
+### Current Features
+
+- **Cinematic Hero Section**: Featured race of the week with dramatic full-screen presentation
+- **Responsive Masonry Grid**: Adaptive card layout that works on all screen sizes
+- **Search & Filter**: Find races by driver, track, year, or vehicle class
+- **Race Detail Pages**: Deep dive into race history, setup details, and context
+- **Dark Racing Aesthetic**: Game-inspired UI with noise texture, vignette, and scanline effects
+- **Image Positioning Controls**: Fine-tune hero images with zoom and pan controls
+- **Performance Optimized**: GPU-accelerated animations, lazy loading, reduced motion support
+
+### Planned Features
+
+- **Direct AMS2 Integration**: One-click race launching via custom protocol
+- **User Submissions**: Community-contributed iconic races
+- **Race Collections**: Curated playlists (e.g., "Senna's Greatest Drives")
+- **YouTube Integration**: Embedded race footage and onboard cameras
+- **Telemetry Comparison**: Compare your lap to the historical driver
+
+## 🎨 Design Philosophy
+
+The UI is inspired by modern racing game menus (Gran Turismo, F1 series) with:
+
+- **Cinematic scale**: Large hero images, dramatic typography
+- **Racing DNA**: Red accents, skewed labels, HUD-style information
+- **Game software texture**: Noise overlay, vignette, scanline effects
+- **Fluid layout**: Edge-to-edge design that fills the screen
+- **Subtle motion**: Hover effects, transitions, and micro-interactions
+
+## 🛠️ Tech Stack
 
 - **Framework**: Next.js 14+ (App Router)
 - **Language**: TypeScript
@@ -187,28 +228,40 @@ After deployment, monitor your application:
 - **Speed Insights**: Enable Vercel Speed Insights for real-user metrics
 - **Logs**: View deployment and runtime logs in the Vercel dashboard
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 app/                    # Next.js App Router pages
-├── layout.tsx         # Root layout with fonts and theme
-├── page.tsx           # Gallery page (home)
-└── globals.css        # Global styles with custom utilities
+├── layout.tsx         # Root layout with fonts, analytics, and theme
+├── page.tsx           # Homepage with hero, search, and gallery
+└── race/[id]/         # Dynamic race detail pages
+    ├── page.tsx       # Race detail view
+    ├── loading.tsx    # Loading skeleton
+    └── not-found.tsx  # 404 page
 
 components/            # React components
-├── ui/               # Shadcn/UI base components
-├── gallery/          # Gallery-specific components
-├── race-detail/      # Race detail page components
-└── shared/           # Shared components
+├── ui/               # Shadcn/UI base components (button, card)
+├── gallery/          # Gallery components (RaceCard, BentoGrid)
+├── homepage/         # Homepage components (CinematicHero, HeroSection)
+├── race-detail/      # Race detail components (MediaSection, WeatherTimeline)
+├── search/           # Search and filter components
+└── shared/           # Shared components (SiteHeader, NoiseTexture, BackButton)
 
 data/                 # Data files
-├── races.json        # Race data store
-└── ams2_*.json       # AMS2 reference data
+├── races/            # Individual race JSON files
+│   ├── group-c.json
+│   ├── f-classic-gen1.json
+│   └── opala79.json
+└── ams2_*.json       # AMS2 reference data (tracks, vehicles, weather)
 
 lib/                  # Utility functions and helpers
+├── raceData.ts       # Race data loading and validation
+├── filterUtils.ts    # Search and filter logic
+├── types.ts          # TypeScript interfaces
+└── hooks/            # Custom React hooks
 ```
 
-## Design System
+## 🎨 Design System
 
 ### Colors
 
@@ -225,10 +278,89 @@ lib/                  # Utility functions and helpers
 
 - **Glassmorphism**: Backdrop blur with semi-transparent backgrounds
 - **Aurora Gradients**: Animated gradient backgrounds
-- **Noise Texture**: Subtle grain overlay
-- **3D Tilt**: Mouse-reactive card tilting
-- **Animated Borders**: Gradient border glow on hover
+- **Noise Texture**: Subtle grain overlay for game software feel
+- **Vignette**: Radial gradient darkening at screen edges
+- **Scanline Animation**: White gradient sweep on card hover
+- **Desaturation**: Images go from 80% to 100% saturation on hover
+- **3D Transforms**: GPU-accelerated scale and translate effects
 
-## License
+## 🖼️ Image Positioning System
+
+Each race can have custom image positioning for optimal composition:
+
+```json
+{
+  "imageScale": 1.3,        // Zoom level (1.0 = normal, 1.5 = 50% zoom)
+  "imageOffsetX": -50,      // Horizontal offset in pixels (negative = left)
+  "imageOffsetY": 20,       // Vertical offset in pixels (positive = down)
+  "imagePosition": "center center"  // CSS object-position fallback
+}
+```
+
+This allows precise control over how hero images are displayed without cropping important elements.
+
+## 🧪 Testing
+
+The project uses property-based testing with fast-check to ensure correctness:
+
+```bash
+npm test              # Run all tests
+npm run test:watch    # Watch mode for development
+```
+
+Tests cover:
+- Search and filter logic with random inputs
+- Race data validation
+- Component rendering and interactions
+- Performance benchmarks
+
+## 🚀 Contributing
+
+Want to add an iconic race? Here's the structure:
+
+```json
+{
+  "id": "unique-race-id",
+  "title": "Race Title",
+  "driver": "Driver Name",
+  "team": "Team Name",
+  "year": "1988",
+  "tags": ["Category", "Track Type", "Era"],
+  "description": "Compelling race description",
+  "heroImage": "/images/race-image.png",
+  "imageScale": 1.2,
+  "imageOffsetX": 0,
+  "imageOffsetY": -30,
+  "youtubeId": "VIDEO_ID",
+  "raceContext": {
+    "event": "Race Event Name",
+    "circuit": "Circuit Name, Country",
+    "laps": 50,
+    "distance": "300 km",
+    "conditions": "Weather conditions",
+    "wikipediaUrl": "https://...",
+    "podiumResults": [],
+    "keyMoments": ["Moment 1", "Moment 2"],
+    "significance": "Why this race matters"
+  },
+  "ams2": {
+    "trackId": 123456,
+    "trackName": "Track_Name",
+    "vehicleClassId": 789012,
+    "vehicleClassName": "Class Name",
+    "vehicleId": 345678,
+    "vehicleName": "Car Name",
+    "date": "1988-05-08",
+    "time": "14:00",
+    "aiCount": 29,
+    "raceLength": "50 laps",
+    "weather": [
+      { "slot": 1, "weatherId": 123, "weatherName": "Clear" }
+    ]
+  }
+}
+```
+
+## 📝 License
 
 Private project - All rights reserved
