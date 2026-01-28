@@ -1,0 +1,95 @@
+[
+  {
+    "id": "daytona-24-lmdh",
+    "title": "Dawn of a New Era",
+    "driver": "Generic",
+    "team": "Cadillac Racing",
+    "year": "2023",
+    "tags": ["Endurance", "Modern", "USA"],
+    "description": "The debut of the LMDh hybrids. Take the Cadillac V-Series.R through the night at Daytona in a multi-class battle with LMP2, LMP3, and GT3 cars. Manage the hybrid system and survive the traffic.",
+    "heroImage": "/images/lmdh-daytona.png",
+    "imagePosition": "center center",
+    "youtubeId": "r-aFWzHz4uY",
+    "raceContext": {
+      "event": "2023 24 Hours of Daytona",
+      "circuit": "Daytona International Speedway, USA",
+      "laps": 783,
+      "distance": "4400 km",
+      "conditions": "Clear / Night",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2023_24_Hours_of_Daytona",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Blomqvist/Braun",
+          "team": "Meyer Shank",
+          "vehicle": "Acura ARX-06"
+        },
+        {
+          "position": 2,
+          "driver": "Taylor/Albuquerque",
+          "team": "Wayne Taylor",
+          "vehicle": "Acura ARX-06"
+        },
+        {
+          "position": 3,
+          "driver": "Bourdais/Van der Zande",
+          "team": "Cadillac",
+          "vehicle": "V-Series.R"
+        }
+      ],
+      "keyMoments": [
+        "The debut of the GTP class",
+        "Cadillac's V8 sound winning the crowd",
+        "A sprint finish after 24 hours between Acura and Cadillac"
+      ],
+      "significance": "This race launched the modern boom of endurance racing, with major manufacturers returning to the top class."
+    },
+    "ams2": {
+      "trackId": 467707118,
+      "trackName": "Daytona_Road_Course",
+      "vehicleClassId": -837115715,
+      "vehicleClassName": "LMDh",
+      "vehicleId": 16119375,
+      "vehicleName": "Cadillac V-Series.R",
+      "requiredDLC": ["Racing USA Pt 1", "Endurance Pack Pt 1"],
+      "multiClass": true,
+      "aiCount": 47,
+      "aiDistribution": [
+        {
+          "vehicleClassId": -837115715,
+          "vehicleClassName": "LMDh",
+          "count": 15,
+          "note": "GTP class"
+        },
+        {
+          "vehicleClassId": -564539194,
+          "vehicleClassName": "LMP2",
+          "count": 12,
+          "note": "LMP2 class"
+        },
+        {
+          "vehicleClassId": 829452122,
+          "vehicleClassName": "P3",
+          "count": 10,
+          "note": "LMP3 class"
+        },
+        {
+          "vehicleClassId": -112887377,
+          "vehicleClassName": "GT3",
+          "count": 10,
+          "note": "GTD Pro & GTD classes"
+        }
+      ],
+      "date": "2023-01-28",
+      "time": "18:00",
+      "raceLength": "60 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

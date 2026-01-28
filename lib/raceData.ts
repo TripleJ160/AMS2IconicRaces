@@ -8,6 +8,15 @@ import f1VintageRaces from '@/data/races/f-vintage-gen1.json';
 import groupCRaces from '@/data/races/group-c.json';
 import f1ClassicGen1Races from '@/data/races/f-classic-gen1.json';
 import opalaRaces from '@/data/races/opala79.json';
+import fUsaGen2Races from '@/data/races/f-usa-gen2.json';
+import groupARaces from '@/data/races/group-a.json';
+import lmdhRaces from '@/data/races/lmdh.json';
+import fRetroGen3Races from '@/data/races/f-retro-gen3.json';
+import copaTruckRaces from '@/data/races/copa-truck.json';
+import fClassicGen2Races from '@/data/races/f-classic-gen2.json';
+import superV8Races from '@/data/races/super-v8.json';
+import gt1Races from '@/data/races/gt1.json';
+import fV10Gen2Races from '@/data/races/f-v10-gen2.json';
 
 // Combine all race collections
 const racesData = [
@@ -17,6 +26,15 @@ const racesData = [
   ...groupCRaces,
   ...f1ClassicGen1Races,
   ...opalaRaces,
+  ...fUsaGen2Races,
+  ...groupARaces,
+  ...lmdhRaces,
+  ...fRetroGen3Races,
+  ...copaTruckRaces,
+  ...fClassicGen2Races,
+  ...superV8Races,
+  ...gt1Races,
+  ...fV10Gen2Races,
 ];
 
 /**
@@ -54,6 +72,16 @@ const WeatherSlotSchema = z.object({
 });
 
 /**
+ * Zod schema for AI class distribution
+ */
+const AIClassDistributionSchema = z.object({
+  vehicleClassId: z.number(),
+  vehicleClassName: z.string(),
+  count: z.number(),
+  note: z.string().optional(),
+});
+
+/**
  * Zod schema for AMS2Setup validation
  */
 const AMS2SetupSchema = z.object({
@@ -68,6 +96,9 @@ const AMS2SetupSchema = z.object({
   aiCount: z.number(),
   raceLength: z.string(),
   weather: z.array(WeatherSlotSchema),
+  requiredDLC: z.array(z.string()).optional(),
+  multiClass: z.boolean().optional(),
+  aiDistribution: z.array(AIClassDistributionSchema).optional(),
 });
 
 /**

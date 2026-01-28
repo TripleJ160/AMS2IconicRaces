@@ -10,7 +10,6 @@ interface SearchAndFilterPanelProps {
   availableClasses: string[];
   activeFilters: Set<string>;
   onFilterToggle: (className: string) => void;
-  onResetFilters: () => void;
   onClearAll: () => void;
   raceCountByClass?: Map<string, number>;
 }
@@ -22,7 +21,6 @@ export function SearchAndFilterPanel({
   availableClasses,
   activeFilters,
   onFilterToggle,
-  onResetFilters,
   onClearAll,
   raceCountByClass,
 }: SearchAndFilterPanelProps) {
@@ -65,24 +63,7 @@ export function SearchAndFilterPanel({
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-2 items-center">
-          {/* Reset Filters Button */}
-          {hasActiveFilters && (
-            <button
-              onClick={onResetFilters}
-              className="skew-ams2 px-4 py-2
-                         bg-black/80 backdrop-blur-md
-                         border border-red-900/50
-                         text-text-secondary hover:text-text-primary hover:border-red-600
-                         transition-all duration-200
-                         text-sm font-semibold uppercase tracking-wider
-                         focus:outline-none focus:ring-2 focus:ring-accent-red focus:ring-offset-2 focus:ring-offset-background-primary"
-              aria-label="Reset all filters"
-            >
-              <span className="skew-ams2-content">Reset Filters</span>
-            </button>
-          )}
-
-          {/* Clear All Button */}
+          {/* Clear All Button - clears both search and filters */}
           {showClearAll && (
             <button
               onClick={onClearAll}

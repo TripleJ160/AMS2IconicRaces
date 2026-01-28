@@ -45,7 +45,8 @@
         { "slot": 2, "weatherId": 270338437, "weatherName": "Light Rain" },
         { "slot": 3, "weatherId": -1293634875, "weatherName": "Overcast" },
         { "slot": 4, "weatherId": 1461703858, "weatherName": "Rain" }
-      ]
+      ],
+      "requiredDLC": ["Formula HiTech"]
     }
   }
 ]

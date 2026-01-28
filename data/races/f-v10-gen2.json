@@ -1,0 +1,69 @@
+[
+  {
+    "id": "schumacher-monza-04",
+    "title": "The Red Baron",
+    "driver": "Michael Schumacher",
+    "team": "Ferrari",
+    "year": "2004",
+    "tags": ["F1", "Historic", "Europe"],
+    "description": "The V10 era at its peak. 19,000 RPM, groove tires, and the fastest lap records that stood for 15 years. Unleash the F2004 at the Temple of Speed.",
+    "heroImage": "/images/schumacher-monza.png",
+    "imagePosition": "center center",
+    "imageScale": 1.1,
+    "youtubeId": "U2RpM1N5UGY",
+    "raceContext": {
+      "event": "2004 Italian Grand Prix",
+      "circuit": "Monza, Italy",
+      "laps": 53,
+      "distance": "306 km",
+      "conditions": "Dry",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2004_Italian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Rubens Barrichello",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2004"
+        },
+        {
+          "position": 2,
+          "driver": "Michael Schumacher",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2004"
+        },
+        {
+          "position": 3,
+          "driver": "Jenson Button",
+          "team": "BAR-Honda",
+          "vehicle": "BAR 006"
+        }
+      ],
+      "keyMoments": [
+        "Montoya's lap record of 260.6 km/h average speed (still the fastest ever)",
+        "Ferrari 1-2 finish in front of the Tifosi",
+        "The sound of the V10s echoing through the Royal Park"
+      ],
+      "significance": "This was the absolute peak of F1 speed before regulations slowed the cars down. The F2004 is widely considered the most dominant F1 machine ever built."
+    },
+    "ams2": {
+      "trackId": 509991425,
+      "trackName": "Monza_2001",
+      "vehicleClassId": 1242038633,
+      "vehicleClassName": "F-V10_Gen2",
+      "vehicleId": 523915852,
+      "vehicleName": "Formula V10 Gen2",
+      "requiredDLC": ["Premium Track Pack"],
+      "date": "2004-09-12",
+      "time": "14:00",
+      "aiCount": 19,
+      "raceLength": "53 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]

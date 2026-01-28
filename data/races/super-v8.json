@@ -1,0 +1,66 @@
+[
+  {
+    "id": "bathurst-1000",
+    "title": "King of the Mountain",
+    "driver": "Shane van Gisbergen",
+    "team": "Red Bull Holden",
+    "year": "2020",
+    "tags": ["Touring", "Modern", "Australia"],
+    "description": "The last race for the Holden factory team. A farewell to the V8 era at Mount Panorama. Concrete walls, 300km/h, and zero margin for error.",
+    "heroImage": "/images/bathurst-v8.png",
+    "imagePosition": "center center",
+    "youtubeId": "qGYH8C_l25M",
+    "raceContext": {
+      "event": "2020 Bathurst 1000",
+      "circuit": "Mount Panorama, Australia",
+      "laps": 161,
+      "distance": "1000 km",
+      "conditions": "Mixed",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2020_Bathurst_1000",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Van Gisbergen / Tander",
+          "team": "Red Bull Holden",
+          "vehicle": "Commodore ZB"
+        },
+        {
+          "position": 2,
+          "driver": "Mostert / Walkinshaw",
+          "team": "WAU",
+          "vehicle": "Mustang GT"
+        }
+      ],
+      "keyMoments": [
+        "Safety car restarts bunching the field",
+        "Rain falling only on the top of the mountain",
+        "SVG's final stint to claim the win for Holden"
+      ],
+      "significance": "The Supercars Championship is the premier touring car series in the world. Bathurst is its crown jewel, punishing mistakes more severely than Monaco."
+    },
+    "ams2": {
+      "trackId": 1080325116,
+      "trackName": "Bathurst_2020",
+      "vehicleClassId": -1097982207,
+      "vehicleClassName": "SuperV8",
+      "vehicleId": 253111186,
+      "vehicleName": "Super V8",
+      "date": "2020-10-18",
+      "time": "11:00",
+      "aiCount": 25,
+      "raceLength": "30 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        },
+        {
+          "slot": 2,
+          "weatherId": 296956818,
+          "weatherName": "Light Cloud"
+        }
+      ]
+    }
+  }
+]

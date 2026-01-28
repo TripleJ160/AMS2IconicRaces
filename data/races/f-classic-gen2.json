@@ -1,0 +1,67 @@
+[
+  {
+    "id": "senna-suzuka-88",
+    "title": "The Comeback King",
+    "driver": "Ayrton Senna",
+    "team": "McLaren-Honda",
+    "year": "1988",
+    "tags": ["F1", "Historic", "Japan"],
+    "description": "Senna stalls on the grid, dropping to 14th. Then, drops of rain fall. What followed was the greatest comeback drive to seal his first World Championship.",
+    "heroImage": "/images/senna-suzuka.png",
+    "imagePosition": "center center",
+    "youtubeId": "6vspDRKsRl8",
+    "raceContext": {
+      "event": "1988 Japanese Grand Prix",
+      "circuit": "Suzuka (Kansai), Japan",
+      "laps": 51,
+      "distance": "298 km",
+      "conditions": "Damp / Drying",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/1988_Japanese_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Ayrton Senna",
+          "team": "McLaren",
+          "vehicle": "MP4/4"
+        },
+        {
+          "position": 2,
+          "driver": "Alain Prost",
+          "team": "McLaren",
+          "vehicle": "MP4/4"
+        }
+      ],
+      "keyMoments": [
+        "Senna stalling at the start and dropping to mid-pack",
+        "Overtaking 8 cars on lap 1",
+        "Catching and passing Prost on lap 27",
+        "Winning his first title"
+      ],
+      "significance": "The MP4/4 is the icon of F1 perfection. This race enshrined Senna's mystique as a driver who could transcend the car's issues."
+    },
+    "ams2": {
+      "trackId": 1035236174,
+      "trackName": "Kansai_Classic",
+      "vehicleClassId": 843858811,
+      "vehicleClassName": "F-Classic_Gen2",
+      "vehicleId": -489015418,
+      "vehicleName": "McLaren Honda MP4/4",
+      "date": "1988-10-30",
+      "time": "13:00",
+      "aiCount": 25,
+      "raceLength": "20 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 296956818,
+          "weatherName": "Light Cloud"
+        },
+        {
+          "slot": 2,
+          "weatherId": 270338437,
+          "weatherName": "Light Rain"
+        }
+      ]
+    }
+  }
+]

@@ -96,4 +96,14 @@
     border-left: 4px solid rgb(220, 0, 0);
     box-shadow: -8px 0 20px rgba(220, 0, 0, 0.6);
   }
+
+  /* Hide scrollbar while maintaining scroll functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
 }

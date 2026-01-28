@@ -2,17 +2,21 @@
 
 import Image from 'next/image'
 import { BackButton } from '@/components/shared/BackButton'
+import { DLCBadge } from '@/components/shared/DLCBadge'
 import { StorySection } from './StorySection'
 import { RaceContextSection } from './RaceContextSection'
 import { SetupSection } from './SetupSection'
 import { MediaSection } from './MediaSection'
+import { RelatedRaces } from './RelatedRaces'
+import { shouldShowDLCBadge } from '@/lib/filterUtils'
 import type { Race } from '@/lib/types'
 
 interface RaceDetailViewProps {
   race: Race
+  allRaces: Race[]
 }
 
-export function RaceDetailView({ race }: RaceDetailViewProps) {
+export function RaceDetailView({ race, allRaces }: RaceDetailViewProps) {
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-background-primary">
       <BackButton />
@@ -30,6 +34,13 @@ export function RaceDetailView({ race }: RaceDetailViewProps) {
           />
           {/* Lighter gradient overlay for better image visibility */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          
+          {/* DLC Badge - positioned in top-right corner with detail variant */}
+          {shouldShowDLCBadge(race) && race.ams2?.requiredDLC && (
+            <div className="absolute top-4 right-4 z-10">
+              <DLCBadge requiredDLC={race.ams2.requiredDLC} variant="detail" />
+            </div>
+          )}
           
           {/* Title overlay on image */}
           <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
@@ -74,6 +85,13 @@ export function RaceDetailView({ race }: RaceDetailViewProps) {
             youtubeId={race.youtubeId} 
             heroImage={race.heroImage}
             title={race.title}
+          />
+          
+          {/* Related Races Section - added at bottom of page */}
+          <RelatedRaces 
+            currentRace={race} 
+            allRaces={allRaces}
+            maxResults={3}
           />
         </div>
       </div>

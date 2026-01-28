@@ -33,6 +33,16 @@ export interface WeatherSlot {
 }
 
 /**
+ * AI opponent class distribution for multi-class races
+ */
+export interface AIClassDistribution {
+  vehicleClassId: number;
+  vehicleClassName: string;
+  count: number;
+  note?: string;
+}
+
+/**
  * AMS2 setup configuration with actual game IDs
  */
 export interface AMS2Setup {
@@ -47,6 +57,9 @@ export interface AMS2Setup {
   aiCount: number;
   raceLength: string;
   weather: WeatherSlot[];
+  requiredDLC?: string[];
+  multiClass?: boolean;
+  aiDistribution?: AIClassDistribution[];
 }
 
 /**

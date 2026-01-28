@@ -1,0 +1,48 @@
+[
+  {
+    "id": "copa-truck-interlagos",
+    "title": "Battle of the Giants",
+    "driver": "Beto Monteiro",
+    "team": "Volkswagen",
+    "year": "2020",
+    "tags": ["Trucks", "Modern", "Brazil"],
+    "description": "Forget aerodynamics. This is 1000HP, 5 tons, and pure contact. Keep your brakes cool or lose them completely at the end of the straight.",
+    "heroImage": "/images/trucks-interlagos.png",
+    "imagePosition": "center center",
+    "youtubeId": "qAmhLM2lPaU",
+    "raceContext": {
+      "event": "Copa Truck 2020",
+      "circuit": "Interlagos, Brazil",
+      "laps": 12,
+      "distance": "50 km",
+      "conditions": "Hot",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Copa_Truck",
+      "podiumResults": [],
+      "keyMoments": [
+        "Trucks hitting the speed limiter (160km/h) halfway down the straight",
+        "Water-cooled brakes steaming in every corner",
+        "The terrifying sight of a truck going side-by-side through the Senna S"
+      ],
+      "significance": "Unique to Brazil and AMS2. Copa Truck is a fan favorite for its absurdity and close racing. Managing brake temperature is the primary skill."
+    },
+    "ams2": {
+      "trackId": -1478712571,
+      "trackName": "Interlagos_GP",
+      "vehicleClassId": -859240302,
+      "vehicleClassName": "CopaTruck",
+      "vehicleId": -619309786,
+      "vehicleName": "Vulkan Truck",
+      "date": "2020-12-10",
+      "time": "12:00",
+      "aiCount": 18,
+      "raceLength": "12 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": -934211870,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  }
+]
