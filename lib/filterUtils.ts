@@ -51,12 +51,14 @@ export function getAvailableClasses(races: Race[]): string[] {
  * @param races - Array of race objects to filter
  * @param searchQuery - Search query string (matches driver, year, or vehicle class)
  * @param activeFilters - Set of active vehicle class names
+ * @param dlcFilter - DLC filter option ('all', 'base', or 'dlc')
  * @returns Filtered array of races matching both search and class filters (AND logic)
  */
 export function filterRaces(
   races: Race[],
   searchQuery: string,
-  activeFilters: Set<string>
+  activeFilters: Set<string>,
+  dlcFilter: 'all' | 'base' | 'dlc' = 'all'
 ): Race[] {
   let results = races;
   
@@ -79,6 +81,16 @@ export function filterRaces(
       activeFilters.has(race.ams2?.vehicleClassName)
     );
   }
+  
+  // Apply DLC filter
+  if (dlcFilter === 'base') {
+    // Show only races that don't require DLC
+    results = results.filter(race => !shouldShowDLCBadge(race));
+  } else if (dlcFilter === 'dlc') {
+    // Show only races that require DLC
+    results = results.filter(race => shouldShowDLCBadge(race));
+  }
+  // If dlcFilter === 'all', show all races (no filtering)
   
   return results;
 }

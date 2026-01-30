@@ -17,6 +17,7 @@ import fClassicGen2Races from '@/data/races/f-classic-gen2.json';
 import superV8Races from '@/data/races/super-v8.json';
 import gt1Races from '@/data/races/gt1.json';
 import fV10Gen2Races from '@/data/races/f-v10-gen2.json';
+import fReizaRaces from '@/data/races/f-reiza.json';
 
 // Combine all race collections
 const racesData = [
@@ -35,6 +36,7 @@ const racesData = [
   ...superV8Races,
   ...gt1Races,
   ...fV10Gen2Races,
+  ...fReizaRaces,
 ];
 
 /**
@@ -120,6 +122,7 @@ const RaceSchema = z.object({
   youtubeId: z.string(),
   raceContext: RaceContextSchema,
   ams2: AMS2SetupSchema,
+  showInGallery: z.boolean().optional(),
 });
 
 /**
@@ -128,6 +131,15 @@ const RaceSchema = z.object({
  */
 export const getAllRaces = (): Race[] => {
   return racesData.map(race => RaceSchema.parse(race)) as Race[];
+};
+
+/**
+ * Get races that should be displayed in the Gallery
+ * Filters out races marked with showInGallery: false
+ * @returns Array of validated Race objects for gallery display
+ */
+export const getGalleryRaces = (): Race[] => {
+  return getAllRaces().filter(race => race.showInGallery !== false);
 };
 
 /**

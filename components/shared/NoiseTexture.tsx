@@ -11,9 +11,9 @@ export function NoiseTexture() {
         }}
       />
       
-      {/* Subtle vignette for corner darkening */}
+      {/* Subtle vignette for corner darkening - positioned to not affect sidebar */}
       <div 
-        className="fixed inset-0 z-[99] pointer-events-none"
+        className="fixed inset-0 z-[99] pointer-events-none md:left-64"
         style={{
           background: 'radial-gradient(circle at center, transparent 0%, transparent 50%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.4) 100%)',
         }}

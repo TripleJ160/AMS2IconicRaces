@@ -7,6 +7,7 @@ import type { Race } from '@/lib/types';
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion';
 import { DLCBadge } from '@/components/shared/DLCBadge';
 import { shouldShowDLCBadge } from '@/lib/filterUtils';
+import { useAuth } from '@/components/AuthProvider';
 
 interface RaceCardProps {
   race: Race;
@@ -24,6 +25,9 @@ interface RaceCardProps {
 export function RaceCard({ race, layoutId, gridSpan, onClick, priority = false }: RaceCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const prefersReducedMotion = useReducedMotion();
+  const { user } = useAuth();
+  
+  const isCompleted = user?.completedRaces.includes(race.id) || false;
 
   return (
     <motion.div
@@ -45,6 +49,30 @@ export function RaceCard({ race, layoutId, gridSpan, onClick, priority = false }
       {shouldShowDLCBadge(race) && (
         <div className="absolute top-3 right-3 z-20">
           <DLCBadge requiredDLC={race.ams2.requiredDLC!} variant="card" />
+        </div>
+      )}
+
+      {/* Completion Badge - top-left corner */}
+      {isCompleted && (
+        <div className="absolute top-3 left-3 z-20">
+          <div className="flex items-center gap-2 bg-green-600/90 px-3 py-1.5 rounded-lg shadow-lg backdrop-blur-sm">
+            <svg
+              className="h-4 w-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <span className="text-white font-bold text-xs uppercase tracking-wider">
+              Completed
+            </span>
+          </div>
         </div>
       )}
 

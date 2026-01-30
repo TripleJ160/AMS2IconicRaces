@@ -2,8 +2,11 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { Russo_One } from "next/font/google"
 import "./globals.css"
-import { PageTransition } from "@/components/shared/PageTransition"
 import { Analytics } from "@vercel/analytics/react"
+import { AuthProvider } from "@/components/AuthProvider"
+import { Sidebar } from "@/components/Sidebar"
+import { LayoutWrapper } from "@/components/LayoutWrapper"
+import WhatsNewModal from "@/components/WhatsNewModal"
 
 const russoOne = Russo_One({
   weight: "400",
@@ -25,7 +28,11 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${russoOne.variable}`}>
       <body className="aurora-bg min-h-screen">
         <div className="noise-texture fixed inset-0 -z-5" />
-        <PageTransition>{children}</PageTransition>
+        <AuthProvider>
+          <Sidebar />
+          <LayoutWrapper>{children}</LayoutWrapper>
+          <WhatsNewModal />
+        </AuthProvider>
         <Analytics />
       </body>
     </html>

@@ -35,6 +35,15 @@ export function CinematicHero({ race, onClick }: CinematicHeroProps) {
         }
       }}
     >
+      {/* Featured Race Label - positioned to avoid sidebar */}
+      <div className="absolute top-6 left-6 md:left-8 z-10">
+        <div className="skew-ams2 bg-red-600 px-4 py-2 shadow-lg">
+          <span className="skew-ams2-content text-white font-bold text-xs md:text-sm uppercase tracking-[0.2em]">
+            Featured Race of the Week
+          </span>
+        </div>
+      </div>
+
       {/* Background Image with priority loading */}
       <div className="absolute inset-0 overflow-hidden">
         <div 

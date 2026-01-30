@@ -12,6 +12,8 @@ interface SearchAndFilterPanelProps {
   onFilterToggle: (className: string) => void;
   onClearAll: () => void;
   raceCountByClass?: Map<string, number>;
+  dlcFilter: 'all' | 'base' | 'dlc';
+  onDlcFilterChange: (filter: 'all' | 'base' | 'dlc') => void;
 }
 
 export function SearchAndFilterPanel({
@@ -23,10 +25,13 @@ export function SearchAndFilterPanel({
   onFilterToggle,
   onClearAll,
   raceCountByClass,
+  dlcFilter,
+  onDlcFilterChange,
 }: SearchAndFilterPanelProps) {
   const hasActiveFilters = activeFilters.size > 0;
   const hasSearchQuery = searchQuery.trim().length > 0;
-  const showClearAll = hasActiveFilters || hasSearchQuery;
+  const hasDlcFilter = dlcFilter !== 'all';
+  const showClearAll = hasActiveFilters || hasSearchQuery || hasDlcFilter;
 
   return (
     <section 
@@ -44,7 +49,33 @@ export function SearchAndFilterPanel({
 
       {/* Filter Controls */}
       <div className="space-y-3">
-        {/* Filter Chips */}
+        {/* DLC Filter Pills */}
+        <div 
+          className="flex flex-wrap gap-2"
+          role="group"
+          aria-label="DLC content filters"
+        >
+          <FilterChip
+            label="All Races"
+            isActive={dlcFilter === 'all'}
+            onClick={() => onDlcFilterChange('all')}
+            variant="yellow"
+          />
+          <FilterChip
+            label="Base Game Only"
+            isActive={dlcFilter === 'base'}
+            onClick={() => onDlcFilterChange('base')}
+            variant="yellow"
+          />
+          <FilterChip
+            label="DLC Required"
+            isActive={dlcFilter === 'dlc'}
+            onClick={() => onDlcFilterChange('dlc')}
+            variant="yellow"
+          />
+        </div>
+
+        {/* Vehicle Class Filter Chips */}
         <div 
           className="flex flex-wrap gap-2"
           role="group"
