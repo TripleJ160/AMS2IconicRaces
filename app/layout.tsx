@@ -17,6 +17,9 @@ const russoOne = Russo_One({
 export const metadata: Metadata = {
   title: "AMS2 Iconic Races",
   description: "Curated gallery of historical racing moments with exact AMS2 setup configurations",
+  icons: {
+    icon: '/icon.svg',
+  },
 }
 
 export default function RootLayout({
