@@ -171,6 +171,19 @@ export function Sidebar() {
             <SignInButton />
           )}
           
+          {/* Buy Me a Coffee */}
+          <div className="pt-2 border-t border-glass-border/50">
+            <a
+              href="https://buymeacoffee.com/johanusa16d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-4 py-2.5 bg-accent-yellow hover:bg-accent-yellow/90 text-gray-900 font-semibold rounded-lg transition-colors text-sm"
+            >
+              <CoffeeIcon />
+              <span>Buy Me a Coffee</span>
+            </a>
+          </div>
+          
           {/* Version Badge */}
           <div className="text-center pt-2 border-t border-glass-border/50">
             <button
@@ -421,6 +434,14 @@ function GoogleIcon() {
         fill="#EA4335"
         d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
       />
+    </svg>
+  );
+}
+
+function CoffeeIcon() {
+  return (
+    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M2 21h18v-2H2v2zm2-8h10V5H4v8zm12 0V5h2a2 2 0 012 2v4a2 2 0 01-2 2h-2z" />
     </svg>
   );
 }

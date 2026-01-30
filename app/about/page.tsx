@@ -126,6 +126,35 @@ export default function AboutPage() {
             </div>
           </section>
 
+          {/* Support the Project */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-accent-yellow mb-4">Support the Project</h2>
+            <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
+              <p>
+                AMS2 Iconic Races is a passion project that I maintain in my free time. If you find 
+                this resource helpful and want to support its continued development, you can buy me 
+                a coffee!
+              </p>
+              <p>
+                Your support helps cover server costs, Firebase hosting, and motivates me to keep 
+                adding more iconic races and features.
+              </p>
+              <div className="flex justify-center mt-6">
+                <a
+                  href="https://buymeacoffee.com/johanusa16d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-6 py-3 bg-accent-yellow hover:bg-accent-yellow/90 text-gray-900 font-bold rounded-lg transition-colors text-lg shadow-lg"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M2 21h18v-2H2v2zm2-8h10V5H4v8zm12 0V5h2a2 2 0 012 2v4a2 2 0 01-2 2h-2z" />
+                  </svg>
+                  <span>Buy Me a Coffee</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
           {/* Footer Note */}
           <div className="border-t border-gray-800 pt-8 mt-12">
             <p className="text-gray-400 text-sm text-center">
