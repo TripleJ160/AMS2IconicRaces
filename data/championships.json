@@ -1,0 +1,20 @@
+[
+  {
+    "id": "f1-2012-season",
+    "title": "The V8 Finale (2012 Season)",
+    "description": "Often hailed as one of the greatest seasons in F1 history:\n\n• Seven different winners in the first seven races created unprecedented unpredictability\n• Vettel's third title came down to a dramatic finale in Brazil, winning by just 3 points over Alonso\n• Rule changes and faster-degrading Pirelli tyres closed the performance gap between teams\n• Six World Champions racing simultaneously (Vettel, Alonso, Button, Hamilton, Räikkönen, Schumacher)\n• Schumacher's final season and Räikkönen's successful comeback with Lotus\n• Return of the US Grand Prix at the new Circuit of the Americas in Austin, Texas\n\nExperience this legendary season using Formula Reiza (V8 KERS/DRS). Tracks adapted where official ones are unavailable.",
+    "raceIds": [
+      "f1-2012-australia",
+      "f1-2012-spain",
+      "f1-2012-monaco",
+      "f1-2012-canada",
+      "f1-2012-britain",
+      "f1-2012-germany",
+      "f1-2012-belgium",
+      "f1-2012-italy",
+      "f1-2012-usa",
+      "f1-2012-brazil"
+    ],
+    "imageUrl": "/images/f1-2012-australia.png"
+  }
+]

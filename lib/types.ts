@@ -81,4 +81,5 @@ export interface Race {
   youtubeId: string;
   raceContext: RaceContext;
   ams2: AMS2Setup;
+  showInGallery?: boolean; // Whether to display in Gallery (defaults to true). Set to false for championship-only races.
 }

@@ -35,7 +35,8 @@ const mockRaces: Race[] = [
       time: '14:00',
       aiCount: 20,
       raceLength: '50 laps',
-      weather: []
+      weather: [],
+      requiredDLC: ['Track Pack 1'] // Has DLC
     }
   },
   {
@@ -71,6 +72,7 @@ const mockRaces: Race[] = [
       aiCount: 15,
       raceLength: '30 laps',
       weather: []
+      // No requiredDLC - base game
     }
   }
 ];
@@ -157,5 +159,34 @@ describe('filterRaces', () => {
   it('should handle whitespace-only queries', () => {
     const result = filterRaces(mockRaces, '   ', new Set());
     expect(result).toHaveLength(2);
+  });
+
+  it('should filter by DLC requirement - show all races', () => {
+    const result = filterRaces(mockRaces, '', new Set(), 'all');
+    expect(result).toHaveLength(2);
+  });
+
+  it('should filter by DLC requirement - show only base game races', () => {
+    const result = filterRaces(mockRaces, '', new Set(), 'base');
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe('clark-70');
+  });
+
+  it('should filter by DLC requirement - show only DLC races', () => {
+    const result = filterRaces(mockRaces, '', new Set(), 'dlc');
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe('senna-93');
+  });
+
+  it('should combine DLC filter with search query', () => {
+    const result = filterRaces(mockRaces, 'senna', new Set(), 'dlc');
+    expect(result).toHaveLength(1);
+    expect(result[0].driver).toBe('Ayrton Senna');
+  });
+
+  it('should combine DLC filter with class filters', () => {
+    const result = filterRaces(mockRaces, '', new Set(['F-Hitech_Gen2']), 'dlc');
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe('senna-93');
   });
 });

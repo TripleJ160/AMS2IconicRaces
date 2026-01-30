@@ -6,9 +6,12 @@ interface RacePageProps {
   params: {
     id: string
   }
+  searchParams: {
+    from?: string
+  }
 }
 
-export default function RacePage({ params }: RacePageProps) {
+export default function RacePage({ params, searchParams }: RacePageProps) {
   const race = getRaceById(params.id)
   const allRaces = getAllRaces()
 
@@ -16,5 +19,8 @@ export default function RacePage({ params }: RacePageProps) {
     notFound()
   }
 
-  return <RaceDetailView race={race} allRaces={allRaces} />
+  // Determine if this race was accessed from a championship
+  const isFromChampionship = searchParams.from === 'championship'
+
+  return <RaceDetailView race={race} allRaces={allRaces} isFromChampionship={isFromChampionship} />
 }

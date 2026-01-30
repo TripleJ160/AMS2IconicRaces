@@ -14,7 +14,7 @@ export function BackButton() {
       whileHover={prefersReducedMotion ? {} : { scale: 1.05, x: -5 }}
       whileTap={prefersReducedMotion ? {} : { scale: 0.95 }}
       style={{ willChange: 'transform' }}
-      className="fixed top-8 left-8 z-[60] glass-effect p-4 rounded-full hover:bg-glass-bg transition-colors"
+      className="fixed top-8 left-8 z-40 glass-effect p-4 rounded-full hover:bg-glass-bg transition-colors"
       onClick={() => router.back()}
       aria-label="Go back"
     >

@@ -2,23 +2,23 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { getAllRaces } from '@/lib/raceData';
+import { getGalleryRaces } from '@/lib/raceData';
 import { filterRaces, getAvailableClasses } from '@/lib/filterUtils';
 import { BentoGrid, getGridSpan } from '@/components/gallery/BentoGrid';
 import { RaceCard } from '@/components/gallery/RaceCard';
 import { CinematicHero } from '@/components/homepage/CinematicHero';
 import { SearchAndFilterPanel } from '@/components/search/SearchAndFilterPanel';
 import { EmptyState } from '@/components/search/EmptyState';
-import { SiteHeader } from '@/components/shared/SiteHeader';
 import { NoiseTexture } from '@/components/shared/NoiseTexture';
 
 export default function Home() {
   const router = useRouter();
-  const races = getAllRaces();
+  const races = getGalleryRaces(); // Only get races marked for gallery display
 
   // State management for filtering
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [activeFilters, setActiveFilters] = useState<Set<string>>(new Set());
+  const [dlcFilter, setDlcFilter] = useState<'all' | 'base' | 'dlc'>('all');
 
   // Derived state - available vehicle classes
   const availableClasses = useMemo(() => 
@@ -28,8 +28,8 @@ export default function Home() {
 
   // Derived state - filtered races
   const filteredRaces = useMemo(() => 
-    filterRaces(races, searchQuery, activeFilters),
-    [races, searchQuery, activeFilters]
+    filterRaces(races, searchQuery, activeFilters, dlcFilter),
+    [races, searchQuery, activeFilters, dlcFilter]
   );
 
   // Hero race selection - always use the first race (Featured Race of the Week)
@@ -40,14 +40,14 @@ export default function Home() {
   // Accessibility announcement for screen readers
   const resultsAnnouncement = useMemo(() => {
     const count = filteredRaces.length;
-    const hasFilters = activeFilters.size > 0 || searchQuery.trim().length > 0;
+    const hasFilters = activeFilters.size > 0 || searchQuery.trim().length > 0 || dlcFilter !== 'all';
     
     if (!hasFilters) {
       return `Showing all ${count} ${count === 1 ? 'race' : 'races'}`;
     }
     
     return `Found ${count} ${count === 1 ? 'race' : 'races'} matching your search and filters`;
-  }, [filteredRaces.length, activeFilters.size, searchQuery]);
+  }, [filteredRaces.length, activeFilters.size, searchQuery, dlcFilter]);
 
   // Handler functions
   const handleSearchChange = useCallback((value: string) => {
@@ -73,11 +73,16 @@ export default function Home() {
   const handleClearAll = useCallback(() => {
     setSearchQuery('');
     setActiveFilters(new Set());
+    setDlcFilter('all');
   }, []);
 
   const handleRaceClick = useCallback((raceId: string) => {
     router.push(`/race/${raceId}`);
   }, [router]);
+
+  const handleDlcFilterChange = useCallback((filter: 'all' | 'base' | 'dlc') => {
+    setDlcFilter(filter);
+  }, []);
 
   return (
     <main className="min-h-screen">
@@ -93,9 +98,6 @@ export default function Home() {
       >
         Skip to main content
       </a>
-
-      {/* Site Header - Overlays hero */}
-      <SiteHeader />
 
       {/* Cinematic Hero - Full-bleed, no container */}
       <CinematicHero 
@@ -116,6 +118,8 @@ export default function Home() {
           activeFilters={activeFilters}
           onFilterToggle={handleFilterToggle}
           onClearAll={handleClearAll}
+          dlcFilter={dlcFilter}
+          onDlcFilterChange={handleDlcFilterChange}
         />
       </div>
 

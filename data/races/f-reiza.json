@@ -1,0 +1,664 @@
+[
+  {
+    "id": "f1-2012-australia",
+    "title": "Australian Grand Prix 2012",
+    "driver": "Jenson Button",
+    "team": "McLaren",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "The opening round of the most competitive F1 season in modern history. Jenson Button took victory in a thrilling race that set the tone for an unpredictable championship.",
+    "heroImage": "/images/f1-2012-australia.png",
+    "youtubeId": "s0dSYMsi_GQ",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Australian Grand Prix",
+      "circuit": "Adelaide Modern (adapted), Australia",
+      "laps": 58,
+      "distance": "307 km",
+      "conditions": "Sunny",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Australian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Jenson Button",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 2,
+          "driver": "Sebastian Vettel",
+          "team": "Red Bull Racing",
+          "vehicle": "Red Bull RB8"
+        },
+        {
+          "position": 3,
+          "driver": "Lewis Hamilton",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        }
+      ],
+      "keyMoments": [
+        "Button jumping Hamilton at the start to take the lead",
+        "Schumacher's gearbox failure while running 3rd",
+        "Vettel using the Safety Car to jump Hamilton for 2nd",
+        "Pastor Maldonado crashing out on the final lap while chasing Alonso"
+      ],
+      "significance": "This race kicked off the legendary 2012 season. It highlighted the unpredictability of the tires and the closeness of the field."
+    },
+    "ams2": {
+      "trackId": 827815091,
+      "trackName": "Adelaide Modern",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-03-18",
+      "time": "16:00",
+      "aiCount": 23,
+      "raceLength": "58 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-spain",
+    "title": "Spanish Grand Prix 2012",
+    "driver": "Pastor Maldonado",
+    "team": "Williams",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "Pastor Maldonado scored Williams' first victory since 2004 in a stunning performance at Catalunya.",
+    "heroImage": "/images/f1-2012-spain.png",
+    "youtubeId": "X7_vZ6QRU3E",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Spanish Grand Prix",
+      "circuit": "Catalunya GP, Spain",
+      "laps": 66,
+      "distance": "307 km",
+      "conditions": "Clear",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Spanish_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Pastor Maldonado",
+          "team": "Williams",
+          "vehicle": "Williams FW34"
+        },
+        {
+          "position": 2,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        },
+        {
+          "position": 3,
+          "driver": "Kimi Räikkönen",
+          "team": "Lotus",
+          "vehicle": "Lotus E20"
+        }
+      ],
+      "keyMoments": [
+        "Maldonado's maiden and only F1 victory",
+        "Williams' first win in 8 years",
+        "Hamilton's retirement from pole position"
+      ],
+      "significance": "Williams' emotional return to victory lane"
+    },
+    "ams2": {
+      "trackId": 788137081,
+      "trackName": "Catalunya GP",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-05-13",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "66 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-monaco",
+    "title": "Monaco Grand Prix 2012",
+    "driver": "Mark Webber",
+    "team": "Red Bull Racing",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era", "Street"],
+    "description": "Mark Webber dominated the streets of Monaco for his second victory at the principality.",
+    "heroImage": "/images/f1-2012-monaco.png",
+    "youtubeId": "1lWZYMuodG8",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Monaco Grand Prix",
+      "circuit": "Azure Circuit (adapted), Monaco",
+      "laps": 78,
+      "distance": "260 km",
+      "conditions": "Clear",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Monaco_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Mark Webber",
+          "team": "Red Bull Racing",
+          "vehicle": "Red Bull RB8"
+        },
+        {
+          "position": 2,
+          "driver": "Nico Rosberg",
+          "team": "Mercedes",
+          "vehicle": "Mercedes F1 W03"
+        },
+        {
+          "position": 3,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        }
+      ],
+      "keyMoments": [
+        "Webber's commanding performance from pole",
+        "Schumacher's controversial collision with Grosjean",
+        "Fifth different winner in five races"
+      ],
+      "significance": "Continued the unprecedented streak of different winners"
+    },
+    "ams2": {
+      "trackId": -1939104917,
+      "trackName": "Azure Circuit",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-05-27",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "78 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-canada",
+    "title": "Canadian Grand Prix 2012",
+    "driver": "Lewis Hamilton",
+    "team": "McLaren",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "Lewis Hamilton took a dominant victory at Circuit Gilles Villeneuve in Montreal.",
+    "heroImage": "/images/f1-2012-canada.png",
+    "youtubeId": "f9p0myjMLWg",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Canadian Grand Prix",
+      "circuit": "Montreal Modern (adapted), Canada",
+      "laps": 70,
+      "distance": "305 km",
+      "conditions": "Partly Cloudy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Canadian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Lewis Hamilton",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 2,
+          "driver": "Romain Grosjean",
+          "team": "Lotus",
+          "vehicle": "Lotus E20"
+        },
+        {
+          "position": 3,
+          "driver": "Sergio Pérez",
+          "team": "Sauber",
+          "vehicle": "Sauber C31"
+        }
+      ],
+      "keyMoments": [
+        "Hamilton's lights-to-flag victory",
+        "Vettel's gearbox failure while leading",
+        "Sixth different winner in six races"
+      ],
+      "significance": "Extended the remarkable winning streak to six different victors"
+    },
+    "ams2": {
+      "trackId": -1239363445,
+      "trackName": "Montreal Modern",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-06-10",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "70 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 2,
+          "weatherName": "Partly Cloudy"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-britain",
+    "title": "British Grand Prix 2012",
+    "driver": "Mark Webber",
+    "team": "Red Bull Racing",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era", "Rain"],
+    "description": "Mark Webber mastered the wet conditions at Silverstone to take his second victory of the season.",
+    "heroImage": "/images/f1-2012-britain.png",
+    "youtubeId": "RPlB968kVmo",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 British Grand Prix",
+      "circuit": "Silverstone GP, United Kingdom",
+      "laps": 52,
+      "distance": "306 km",
+      "conditions": "Rain",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_British_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Mark Webber",
+          "team": "Red Bull Racing",
+          "vehicle": "Red Bull RB8"
+        },
+        {
+          "position": 2,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        },
+        {
+          "position": 3,
+          "driver": "Sebastian Vettel",
+          "team": "Red Bull Racing",
+          "vehicle": "Red Bull RB8"
+        }
+      ],
+      "keyMoments": [
+        "Dramatic wet-weather racing",
+        "Multiple safety car periods",
+        "Seventh different winner in seven races - unprecedented in F1 history"
+      ],
+      "significance": "Completed the historic streak of seven different winners in seven races"
+    },
+    "ams2": {
+      "trackId": -931849903,
+      "trackName": "Silverstone GP",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-07-08",
+      "time": "13:00",
+      "aiCount": 23,
+      "raceLength": "52 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 4,
+          "weatherName": "Light Rain"
+        },
+        {
+          "slot": 2,
+          "weatherId": 5,
+          "weatherName": "Rain"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-germany",
+    "title": "German Grand Prix 2012",
+    "driver": "Fernando Alonso",
+    "team": "Ferrari",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "Fernando Alonso delivered a masterful performance at Hockenheim to extend his championship lead.",
+    "heroImage": "/images/f1-2012-australia.png",
+    "youtubeId": "TTax5MIYnEg",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 German Grand Prix",
+      "circuit": "Hockenheim GP, Germany",
+      "laps": 67,
+      "distance": "306 km",
+      "conditions": "Dry",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_German_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        },
+        {
+          "position": 2,
+          "driver": "Jenson Button",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 3,
+          "driver": "Kimi Räikkönen",
+          "team": "Lotus",
+          "vehicle": "Lotus E20"
+        }
+      ],
+      "keyMoments": [
+        "Alonso's brilliant start from fifth on the grid",
+        "Vettel's home race retirement",
+        "Championship battle intensifies"
+      ],
+      "significance": "Alonso's championship-defining performance"
+    },
+    "ams2": {
+      "trackId": -435924753,
+      "trackName": "Hockenheim GP",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-07-22",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "67 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 0,
+          "weatherName": "Dry"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-belgium",
+    "title": "Belgian Grand Prix 2012",
+    "driver": "Jenson Button",
+    "team": "McLaren",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "Jenson Button took his second victory of the season at the legendary Spa-Francorchamps circuit.",
+    "heroImage": "/images/f1-2012-belgium.png",
+    "youtubeId": "lBM4KpxfsPc",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Belgian Grand Prix",
+      "circuit": "Spa Francorchamps 2020, Belgium",
+      "laps": 44,
+      "distance": "308 km",
+      "conditions": "Clear",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Belgian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Jenson Button",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 2,
+          "driver": "Sebastian Vettel",
+          "team": "Red Bull Racing",
+          "vehicle": "Red Bull RB8"
+        },
+        {
+          "position": 3,
+          "driver": "Kimi Räikkönen",
+          "team": "Lotus",
+          "vehicle": "Lotus E20"
+        }
+      ],
+      "keyMoments": [
+        "Grosjean's first-lap crash that took out Hamilton and Alonso",
+        "Button's recovery from 13th on the grid",
+        "Controversial race-ending incident"
+      ],
+      "significance": "Dramatic race that shifted the championship battle"
+    },
+    "ams2": {
+      "trackId": -1262750090,
+      "trackName": "Spa Francorchamps 2020",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-09-02",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "44 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-italy",
+    "title": "Italian Grand Prix 2012",
+    "driver": "Lewis Hamilton",
+    "team": "McLaren",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "Lewis Hamilton dominated at Monza to keep his championship hopes alive.",
+    "heroImage": "/images/f1-2012-italy.png",
+    "youtubeId": "PY6xRbmwXxA",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Italian Grand Prix",
+      "circuit": "Monza 2020, Italy",
+      "laps": 53,
+      "distance": "306 km",
+      "conditions": "Clear",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Italian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Lewis Hamilton",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 2,
+          "driver": "Sergio Pérez",
+          "team": "Sauber",
+          "vehicle": "Sauber C31"
+        },
+        {
+          "position": 3,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        }
+      ],
+      "keyMoments": [
+        "Hamilton's pole-to-flag victory",
+        "Pérez's impressive charge to second",
+        "Alonso's damage limitation in front of the Tifosi"
+      ],
+      "significance": "Hamilton's statement win at the Temple of Speed"
+    },
+    "ams2": {
+      "trackId": -1257095693,
+      "trackName": "Monza 2020",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-09-09",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "53 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-usa",
+    "title": "United States Grand Prix 2012",
+    "driver": "Lewis Hamilton",
+    "team": "McLaren",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era"],
+    "description": "Lewis Hamilton won the inaugural race at the Circuit of the Americas, though the championship battle continued.",
+    "heroImage": "/images/f1-2012-usa.png",
+    "youtubeId": "39s-ID_yFQI",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 United States Grand Prix",
+      "circuit": "Long Beach (adapted), USA",
+      "laps": 85,
+      "distance": "308 km",
+      "conditions": "Sunny",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_United_States_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Lewis Hamilton",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 2,
+          "driver": "Sebastian Vettel",
+          "team": "Red Bull Racing",
+          "vehicle": "Red Bull RB8"
+        },
+        {
+          "position": 3,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        }
+      ],
+      "keyMoments": [
+        "F1's return to the United States",
+        "Vettel extends championship lead",
+        "Hamilton's third consecutive victory"
+      ],
+      "significance": "Historic return of F1 to America with a purpose-built circuit"
+    },
+    "ams2": {
+      "trackId": 1731699995,
+      "trackName": "Long Beach",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-11-18",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "85 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 1,
+          "weatherName": "Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "f1-2012-brazil",
+    "title": "Brazilian Grand Prix 2012",
+    "driver": "Jenson Button",
+    "team": "McLaren",
+    "year": "2012",
+    "tags": ["F1", "Modern", "V8 Era", "Rain", "Brazil"],
+    "description": "The dramatic season finale at Interlagos in torrential rain. Sebastian Vettel clinched his third consecutive world championship despite spinning and being hit.",
+    "heroImage": "/images/f1-2012-brazil.png",
+    "youtubeId": "oeSn7XW8X08",
+    "showInGallery": false,
+    "raceContext": {
+      "event": "2012 Brazilian Grand Prix",
+      "circuit": "Interlagos GP, Brazil",
+      "laps": 71,
+      "distance": "305 km",
+      "conditions": "Heavy Rain",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/2012_Brazilian_Grand_Prix",
+      "podiumResults": [
+        {
+          "position": 1,
+          "driver": "Jenson Button",
+          "team": "McLaren",
+          "vehicle": "McLaren MP4-27"
+        },
+        {
+          "position": 2,
+          "driver": "Fernando Alonso",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        },
+        {
+          "position": 3,
+          "driver": "Felipe Massa",
+          "team": "Ferrari",
+          "vehicle": "Ferrari F2012"
+        }
+      ],
+      "keyMoments": [
+        "Vettel's first-lap collision and recovery drive to 6th",
+        "Chaotic wet-weather racing with multiple incidents",
+        "Alonso's emotional near-miss at the championship",
+        "Vettel becomes youngest triple world champion"
+      ],
+      "significance": "One of the most dramatic season finales in F1 history"
+    },
+    "ams2": {
+      "trackId": -1478712571,
+      "trackName": "Interlagos GP",
+      "vehicleClassId": -4032086,
+      "vehicleClassName": "F-Reiza",
+      "vehicleId": 1948072701,
+      "vehicleName": "Formula V8 Gen3",
+      "date": "2012-11-25",
+      "time": "14:00",
+      "aiCount": 23,
+      "raceLength": "71 laps",
+      "weather": [
+        {
+          "slot": 1,
+          "weatherId": 5,
+          "weatherName": "Rain"
+        },
+        {
+          "slot": 2,
+          "weatherId": 6,
+          "weatherName": "Heavy Rain"
+        }
+      ]
+    }
+  }
+]

@@ -51,6 +51,7 @@ next-env.d.ts
 
 # Kiro (optional - uncomment if you don't want to share specs/design docs)
 /.kiro/
+/docs/
 
 # OS files
 Thumbs.db
