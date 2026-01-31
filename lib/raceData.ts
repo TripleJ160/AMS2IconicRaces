@@ -40,6 +40,17 @@ const racesData = [
 ];
 
 /**
+ * Zod schema for LiveryPack validation
+ */
+const LiveryPackSchema = z.object({
+  name: z.string(),
+  author: z.string(),
+  url: z.string(),
+  downloads: z.number().optional(),
+  rating: z.number().optional(),
+});
+
+/**
  * Zod schema for PodiumResult validation
  */
 const PodiumResultSchema = z.object({
@@ -123,6 +134,7 @@ const RaceSchema = z.object({
   raceContext: RaceContextSchema,
   ams2: AMS2SetupSchema,
   showInGallery: z.boolean().optional(),
+  liveryPack: LiveryPackSchema.optional(),
 });
 
 /**

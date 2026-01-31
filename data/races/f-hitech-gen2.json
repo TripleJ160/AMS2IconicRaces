@@ -47,6 +47,13 @@
         { "slot": 4, "weatherId": 1461703858, "weatherName": "Rain" }
       ],
       "requiredDLC": ["Formula HiTech"]
+    },
+    "liveryPack": {
+      "name": "[IMG] F1 1993 Season 1.1",
+      "author": "Immersion Modding Group",
+      "url": "https://www.overtake.gg/downloads/img-f1-1993-season.68939/",
+      "downloads": 6347,
+      "rating": 4.00
     }
   }
 ]

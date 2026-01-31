@@ -7,6 +7,7 @@ import { db } from '@/lib/firebase'
 import { useAuth } from '@/components/AuthProvider'
 import { BackButton } from '@/components/shared/BackButton'
 import { DLCBadge } from '@/components/shared/DLCBadge'
+import { LiveryPackCard } from '@/components/shared/LiveryPackCard'
 import { StorySection } from './StorySection'
 import { RaceContextSection } from './RaceContextSection'
 import { SetupSection } from './SetupSection'
@@ -292,6 +293,14 @@ export function RaceDetailView({ race, allRaces, isFromChampionship = false }: R
           <StorySection description={race.description} />
           <RaceContextSection context={race.raceContext} />
           <SetupSection ams2={race.ams2} />
+          
+          {/* Livery Pack Section */}
+          {race.liveryPack && (
+            <section>
+              <LiveryPackCard liveryPack={race.liveryPack} />
+            </section>
+          )}
+          
           <MediaSection 
             youtubeId={race.youtubeId} 
             heroImage={race.heroImage}

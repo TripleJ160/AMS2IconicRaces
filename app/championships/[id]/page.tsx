@@ -9,14 +9,8 @@ import { useAuth } from '@/components/AuthProvider';
 import { RaceCard } from '@/components/gallery/RaceCard';
 import { NoiseTexture } from '@/components/shared/NoiseTexture';
 import { BackButton } from '@/components/shared/BackButton';
-
-interface Championship {
-  id: string;
-  title: string;
-  description: string;
-  raceIds: string[];
-  imageUrl?: string;
-}
+import { LiveryPackCard } from '@/components/shared/LiveryPackCard';
+import type { Championship } from '@/lib/types';
 
 interface ChampionshipDetailPageProps {
   params: {
@@ -191,6 +185,15 @@ export default function ChampionshipDetailPage({ params }: ChampionshipDetailPag
           </div>
         </div>
       </div>
+
+      {/* Livery Pack Section */}
+      {championship.liveryPack && (
+        <div className="w-full px-6 md:px-8 pb-8">
+          <div className="max-w-7xl mx-auto">
+            <LiveryPackCard liveryPack={championship.liveryPack} />
+          </div>
+        </div>
+      )}
 
       {/* Section divider */}
       <div className="w-full px-6 md:px-8 mb-8">

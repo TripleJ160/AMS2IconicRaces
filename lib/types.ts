@@ -1,4 +1,15 @@
 /**
+ * Livery pack information from Overtake.gg or other sources
+ */
+export interface LiveryPack {
+  name: string;
+  author: string;
+  url: string;
+  downloads?: number;
+  rating?: number;
+}
+
+/**
  * Podium result entry
  */
 export interface PodiumResult {
@@ -82,4 +93,17 @@ export interface Race {
   raceContext: RaceContext;
   ams2: AMS2Setup;
   showInGallery?: boolean; // Whether to display in Gallery (defaults to true). Set to false for championship-only races.
+  liveryPack?: LiveryPack; // Optional livery pack for standalone races
+}
+
+/**
+ * Championship data structure
+ */
+export interface Championship {
+  id: string;
+  title: string;
+  description: string;
+  raceIds: string[];
+  imageUrl: string;
+  liveryPack?: LiveryPack; // Optional livery pack for the entire championship
 }

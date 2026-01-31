@@ -15,6 +15,13 @@
       "f1-2012-usa",
       "f1-2012-brazil"
     ],
-    "imageUrl": "/images/f1-2012-australia.png"
+    "imageUrl": "/images/f1-2012-australia.png",
+    "liveryPack": {
+      "name": "[AMS2] F1 2012 Season 2.02",
+      "author": "AFry",
+      "url": "https://www.overtake.gg/downloads/ams2-f1-2012-season.47608/",
+      "downloads": 18805,
+      "rating": 4.96
+    }
   }
 ]
